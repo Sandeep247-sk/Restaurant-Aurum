@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurum — Fine Dining Experience</title>
+    <meta
+      name="description"
+      content="Aurum is a luxury fine-dining restaurant offering an unparalleled culinary journey with seasonal ingredients and world-class chefs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── NAVBAR ── -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-logo" id="logo"
+          >Aurum<span>Fine Dining &amp; Bar</span></a
+        >
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#dishes">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#reservation" class="btn btn-primary nav-cta"
+          >Reserve a Table</a
+        >
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
+      <a href="#about">About</a>
+      <a href="#dishes">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#reservation">Reservations</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section id="hero" aria-label="Hero">
+      <div
+        class="hero-bg"
+        role="img"
+        aria-label="Elegant restaurant interior"
+      ></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow" aria-hidden="true">
+            Est. 2009 — Award Winning Restaurant
+          </div>
+          <h1 class="hero-title">
+            Where Every Dish<br />
+            <em>Tells a Story</em>
+          </h1>
+          <p class="hero-sub">
+            A sanctuary of taste where classical technique meets seasonal
+            imagination. Michelin-recognised dining in the heart of the city.
+          </p>
+          <div class="hero-actions">
+            <a href="#reservation" class="btn btn-primary" id="hero-book-btn"
+              >Book a Table</a
+            >
+            <a href="#dishes" class="btn btn-outline" id="hero-menu-btn"
+              >View Menu</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images reveal">
+            <div class="about-img-main">
+              <img
+                src="images/about-restaurant.png"
+                alt="Aurum restaurant interior with warm lighting"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-img-chef">
+              <img
+                src="images/chef.png"
+                alt="Head Chef portrait"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-badge" aria-label="15 years of excellence">
+              <strong>15</strong>
+              <span>Years of Excellence</span>
+            </div>
+          </div>
+          <div class="about-text reveal" style="transition-delay: 0.15s">
+            <div class="section-label" aria-hidden="true">Our Story</div>
+            <h2 id="about-title" class="section-title">
+              Crafted With Passion,<br /><em>Served With Pride</em>
+            </h2>
+            <div class="divider"></div>
+            <p>
+              Aurum was born from a singular belief — that dining is not merely
+              sustenance, but an art form. Since 2009, we have welcomed guests
+              into a world of considered flavour, where each plate is a
+              conversation between ingredient, technique, and season.
+            </p>
+            <p>
+              Our head chef, Marco Delacroix, trained under three
+              Michelin-starred mentors across Paris, Tokyo, and New York before
+              returning to redefine what fine dining means in this city.
+            </p>
+            <p>
+              We source exclusively from heritage farms, coastal fishing
+              villages, and artisan producers who share our commitment to
+              quality without compromise.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <strong>3</strong><span>Michelin Stars</span>
+              </div>
+              <div class="stat">
+                <strong>48+</strong><span>Signature Dishes</span>
+              </div>
+              <div class="stat">
+                <strong>12K</strong><span>Happy Guests</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DISHES ── -->
+    <section id="dishes" aria-labelledby="dishes-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">
+            Signature Selection
+          </div>
+          <h2 id="dishes-title" class="section-title">
+            Our Signature <em>Dishes</em>
+          </h2>
+          <div class="divider center"></div>
+          <p class="section-subtitle">
+            Each dish is a masterwork — meticulously plated, seasonally
+            inspired, and unforgettably flavoured.
+          </p>
+        </div>
+        <div class="dishes-grid stagger-children">
+          <article class="dish-card" id="dish-wagyu">
+            <div class="dish-img">
+              <img
+                src="images/dish-wagyu.png"
+                alt="A5 Wagyu Tenderloin"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-info">
+              <div class="dish-tag">Main Course</div>
+              <h3 class="dish-name">A5 Wagyu Tenderloin</h3>
+              <p class="dish-desc">
+                Japanese A5 wagyu, truffle jus, bone marrow butter, crispy
+                shallots, heirloom carrot purée.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-price">₹15,499</span>
+                <span class="dish-order">Order Now</span>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" id="dish-lobster">
+            <div class="dish-img">
+              <img
+                src="images/dish-lobster.png"
+                alt="Butter Poached Lobster"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-info">
+              <div class="dish-tag">Seafood</div>
+              <h3 class="dish-name">Butter Poached Lobster</h3>
+              <p class="dish-desc">
+                Maine lobster tail, champagne beurre blanc, saffron foam, sea
+                asparagus, caviar pearls.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-price">₹12,199</span>
+                <span class="dish-order">Order Now</span>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" id="dish-risotto">
+            <div class="dish-img">
+              <img
+                src="images/dish-risotto.png"
+                alt="Black Truffle Risotto"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-info">
+              <div class="dish-tag">Vegetarian</div>
+              <h3 class="dish-name">Black Truffle Risotto</h3>
+              <p class="dish-desc">
+                Aged Carnaroli rice, fresh Périgord truffle, 36-month Parmigiano
+                Reggiano, gold leaf finish.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-price">₹7,999</span>
+                <span class="dish-order">Order Now</span>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" id="dish-souffle">
+            <div class="dish-img">
+              <img
+                src="images/dish-souffle.png"
+                alt="Valrhona Chocolate Soufflé"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-info">
+              <div class="dish-tag">Dessert</div>
+              <h3 class="dish-name">Valrhona Chocolate Soufflé</h3>
+              <p class="dish-desc">
+                72% dark chocolate soufflé, Tahitian vanilla crème anglaise,
+                raspberry coulis, edible gold.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-price">₹3,499</span>
+                <span class="dish-order">Order Now</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY CHOOSE US ── -->
+    <section id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">Why Aurum</div>
+          <h2 id="why-title" class="section-title">
+            The Aurum <em>Promise</em>
+          </h2>
+          <div class="divider center"></div>
+        </div>
+        <div class="why-grid stagger-children">
+          <div class="why-card" id="why-ingredients">
+            <div class="why-icon" aria-hidden="true">🌿</div>
+            <h3 class="why-title">Farm-Fresh Ingredients</h3>
+            <p class="why-desc">
+              Direct partnerships with 28 heritage farms and artisan producers
+              ensure peak seasonal quality in every dish.
+            </p>
+          </div>
+          <div class="why-card" id="why-chefs">
+            <div class="why-icon" aria-hidden="true">👨‍🍳</div>
+            <h3 class="why-title">World-Class Chefs</h3>
+            <p class="why-desc">
+              Our culinary team holds credentials from Le Cordon Bleu, Noma, and
+              The Fat Duck — masters of their craft.
+            </p>
+          </div>
+          <div class="why-card" id="why-service">
+            <div class="why-icon" aria-hidden="true">⚡</div>
+            <h3 class="why-title">Impeccable Service</h3>
+            <p class="why-desc">
+              Every table receives the undivided attention of a dedicated server
+              trained in European hospitality tradition.
+            </p>
+          </div>
+          <div class="why-card" id="why-ambiance">
+            <div class="why-icon" aria-hidden="true">✨</div>
+            <h3 class="why-title">Premium Ambiance</h3>
+            <p class="why-desc">
+              Designed by award-winning architect Lena Voss, our interiors
+              balance warmth, intimacy, and modern luxury.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">Guest Reviews</div>
+          <h2 id="testimonials-title" class="section-title">
+            What Our <em>Guests Say</em>
+          </h2>
+          <div class="divider center"></div>
+        </div>
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-track" id="testimonial-track">
+            <div class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">
+                "An extraordinary evening from start to finish. The wagyu was
+                the finest I have tasted outside of Japan, and the service made
+                us feel like royalty."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">S</div>
+                <div>
+                  <div class="author-name">Sophia Hartmann</div>
+                  <div class="author-role">Food Critic, The Metropolitan</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">
+                "We celebrated our anniversary here and it exceeded every
+                expectation. The truffle risotto alone is worth crossing the
+                city for."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">J</div>
+                <div>
+                  <div class="author-name">James &amp; Claire Bennett</div>
+                  <div class="author-role">Regular Guests</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Chef Marco's tasting menu is a journey through seven courses of
+                pure genius. The chocolate soufflé finale was genuinely
+                emotional."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">A</div>
+                <div>
+                  <div class="author-name">Amara Osei</div>
+                  <div class="author-role">Travel &amp; Lifestyle Blogger</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Flawless execution, exceptional wine pairings, and an
+                atmosphere that is warm yet deeply refined. Aurum has no equal
+                in the city."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">R</div>
+                <div>
+                  <div class="author-name">Rafael Monteiro</div>
+                  <div class="author-role">
+                    Executive Director, Horizon Group
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button
+            class="slider-btn"
+            id="prev-btn"
+            aria-label="Previous testimonial"
+          >
+            &#8592;
+          </button>
+          <div
+            class="slider-dots"
+            role="tablist"
+            aria-label="Testimonial navigation"
+          >
+            <div
+              class="dot active"
+              role="tab"
+              aria-selected="true"
+              aria-label="Testimonial 1"
+            ></div>
+            <div
+              class="dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Testimonial 2"
+            ></div>
+            <div
+              class="dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Testimonial 3"
+            ></div>
+            <div
+              class="dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Testimonial 4"
+            ></div>
+          </div>
+          <button
+            class="slider-btn"
+            id="next-btn"
+            aria-label="Next testimonial"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">Moments</div>
+          <h2 id="gallery-title" class="section-title">
+            Inside <em>Aurum</em>
+          </h2>
+          <div class="divider center"></div>
+        </div>
+        <div class="gallery-grid reveal">
+          <div class="gallery-item" id="gallery-1">
+            <img src="images/gallery-interior.png" alt="Elegant dining room" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-item" id="gallery-2">
+            <img src="images/gallery-bar.png" alt="Luxury bar area" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-item" id="gallery-3">
+            <img src="images/gallery-plating.png" alt="Chef plating a dish" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESERVATION ── -->
+    <section id="reservation" aria-labelledby="reservation-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">Reservations</div>
+          <h2 id="reservation-title" class="section-title">
+            Reserve Your <em>Table</em>
+          </h2>
+          <div class="divider center"></div>
+          <p class="section-subtitle">
+            Secure your dining experience — tables fill quickly, especially on
+            weekends.
+          </p>
+        </div>
+        <div class="reservation-inner reveal">
+          <div class="reservation-info">
+            <h3>Opening Hours</h3>
+            <p>
+              We welcome guests for dinner six evenings a week. Weekend brunch
+              is available from 11am.
+            </p>
+            <ul class="hours-list" aria-label="Opening hours">
+              <li class="hours-item">
+                <strong>Monday</strong><span>Closed</span>
+              </li>
+              <li class="hours-item">
+                <strong>Tue – Thu</strong><span>6:00 PM – 11:00 PM</span>
+              </li>
+              <li class="hours-item">
+                <strong>Friday</strong><span>6:00 PM – Midnight</span>
+              </li>
+              <li class="hours-item">
+                <strong>Saturday</strong><span>11:00 AM – Midnight</span>
+              </li>
+              <li class="hours-item">
+                <strong>Sunday</strong><span>11:00 AM – 10:00 PM</span>
+              </li>
+            </ul>
+            <div style="margin-top: 2.5rem">
+              <div class="section-label" aria-hidden="true">Private Dining</div>
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.9rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                For events and private bookings of 10+ guests, please contact us
+                directly at
+                <strong style="color: var(--gold)">events@aurum.com</strong>
+              </p>
+            </div>
+          </div>
+          <form
+            class="form-grid"
+            id="reservation-form"
+            novalidate
+            aria-label="Table reservation form"
+          >
+            <div class="form-group">
+              <label for="res-name">Full Name</label>
+              <input
+                type="text"
+                id="res-name"
+                name="name"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="res-phone">Phone Number</label>
+              <input
+                type="tel"
+                id="res-phone"
+                name="phone"
+                placeholder="+91 000000000"
+                required
+                autocomplete="tel"
+              />
+            </div>
+            <div class="form-group">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="res-time">Time</label>
+              <select id="res-time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+                <option value="21:30">9:30 PM</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="res-guests">Number of Guests</label>
+              <select id="res-guests" name="guests" required>
+                <option value="" disabled selected>Select party size</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group full" style="grid-column: 1/-1">
+              <button
+                type="submit"
+                class="btn btn-primary form-submit"
+                id="reservation-submit"
+              >
+                Confirm Reservation
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="section-label" aria-hidden="true">Find Us</div>
+          <h2 id="contact-title" class="section-title">Visit <em>Aurum</em></h2>
+          <div class="divider center"></div>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-label">Address</div>
+                <div class="contact-value">
+                  48 Chennai street,<br />India
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact-label">Reservations</div>
+                <div class="contact-value">
+                  <a href="tel:+91 000000000" style="color: inherit"
+                    >+91 000000000</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:hello@aurum.com" style="color: inherit"
+                    >hello@aurum.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="contact-label" style="margin-bottom: 0.75rem">
+                Follow Us
+              </div>
+              <div class="social-row">
+                <a
+                  href="#"
+                  class="social-btn"
+                  id="social-instagram"
+                  aria-label="Instagram"
+                  >&#x1F4F7;</a
+                >
+                <a
+                  href="#"
+                  class="social-btn"
+                  id="social-facebook"
+                  aria-label="Facebook"
+                  >f</a
+                >
+                <a
+                  href="#"
+                  class="social-btn"
+                  id="social-twitter"
+                  aria-label="Twitter / X"
+                  >𝕏</a
+                >
+                <a
+                  href="#"
+                  class="social-btn"
+                  id="social-tiktok"
+                  aria-label="TikTok"
+                  >♪</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="map-container map-placeholder">
+            <div class="map-placeholder-inner">
+              <span class="map-pin-icon">📍</span>
+              <p class="map-placeholder-text">Aurum Fine Dining</p>
+              <span class="map-placeholder-sub">48 Chennai Street, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer id="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="nav-logo">Aurum<span>Fine Dining &amp; Bar</span></div>
+            <p>
+              Where culinary artistry meets understated luxury. A
+              Michelin-recognised destination since 2009.
+            </p>
+            <div class="social-row" style="margin-top: 1.5rem">
+              <a href="#" class="social-btn" aria-label="Instagram"
+                >&#x1F4F7;</a
+              >
+              <a href="#" class="social-btn" aria-label="Facebook">f</a>
+              <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#dishes">Signature Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#reservation">Reservations</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Experience</h4>
+            <ul>
+              <li><a href="#">Tasting Menu</a></li>
+              <li><a href="#">Wine Cellar</a></li>
+              <li><a href="#">Private Dining</a></li>
+              <li><a href="#">Chef's Table</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Cooking Classes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            &copy; 2026 Aurum Fine Dining. All rights reserved.
+          </p>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="#" style="color: var(--text-muted); font-size: 0.8rem"
+              >Privacy Policy</a
+            >
+            <a href="#" style="color: var(--text-muted); font-size: 0.8rem"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
